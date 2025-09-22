@@ -5,6 +5,7 @@ title: Geoscientist website tutorial
 subtitle: A hands-on tutorial to create a website for geoscientist
 author: Viet M. Bui
 logo: logo-workshop.png
+copyright: "2025"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

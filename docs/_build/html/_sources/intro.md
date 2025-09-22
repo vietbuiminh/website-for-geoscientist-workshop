@@ -2,7 +2,7 @@
 
 > who *wouldn't* want to spend their precious free time building a website instead of, you know, actually doing science? Imagine the thrill of debugging HTML at midnight, or the joy of explaining to your colleagues why your homepage is still "under construction." Join us—your future self will thank you (or at least, you'll have a cool URL to put on your business card).
 
-This workshope is designed to be easily setup and maintaining the website. The question is,
+This workshope is designed to be easily setup and maintaining the website. It will use Minimal Mistake theme and Github Page to deploy the website. The question is,
 
 > Will you put time and effort in setting up a nice and proper website?
 
