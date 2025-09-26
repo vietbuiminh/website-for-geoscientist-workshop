@@ -23,6 +23,8 @@ Follow these steps to set up your own website using this template:
 - Click **Branch: main** and type `gh-pages` to create a new branch.
 - Switch to the `gh-pages` branch.
 
+![Creating new branch gh-pages](gh-pages.gif "segment")
+
 ## 4. Enable GitHub Pages
 
 - Go to **Settings** > **Pages**.
