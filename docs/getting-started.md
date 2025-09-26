@@ -55,25 +55,17 @@ This information helps Jekyll and the Minimal Mistakes theme render the page cor
 
 ![Front Matter inside the project](frontmatter.png)
 
-## 3. Create the `gh-pages` Branch
-
-- Go to the **Code** tab.
-- Click **Branch: main** and type `gh-pages` to create a new branch.
-- Switch to the `gh-pages` branch.
-
-![Creating new branch gh-pages](gh-pages.gif "segment")
-
-## 4. Enable GitHub Pages
+## 3. Enable GitHub Pages
 
 - Go to **Settings** > **Pages**.
-- Under **Source**, select the `gh-pages` branch.
+- Under **Source**, select the `main` branch.
 - Click **Save**.
 
 
 
 Your site will be published at `https://yourusername.github.io` shortly.
 
-## 5. Final Notes
+## 4. Final Notes
 > One of the key benefits of using this template is its responsive website design. All components are optimized for viewing on different screen sizes and aspect ratios, ensuring your site looks great and functions smoothly on desktops, tablets, and mobile devices. This adaptability provides a consistent user experience and makes your content accessible to a wider audience.
 
 ![Responsive design in action](responsive.gif "segment")

@@ -379,9 +379,14 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo">Demo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-the-repository">1. Fork the Repository</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-configuration">2. Edit Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-configuration">2. Edit Configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-authors-yml">_data/authors.yml</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-file">Markdown file</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-gh-pages-branch">3. Create the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> Branch</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-github-pages">4. Enable GitHub Pages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-notes">5. Final Notes</a></li>
 </ul>
             </nav>
         </div>
@@ -397,8 +402,10 @@ document.write(`
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
 <section id="demo">
 <h2>Demo<a class="headerlink" href="#demo" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://vietmbui.com/force-academic-mk/"><img alt="Demo" src="_images/template.png" /></a>
-Follow these steps to set up your own website using this template:</p>
+<a href="https://vietmbui.com/force-academic-mk/" target="_blank">
+<img src="{{ site.baseurl }}/template.png" alt="Demo">
+</a>
+Follow these steps to set up your own website using this template:
 </section>
 <section id="fork-the-repository">
 <h2>1. Fork the Repository<a class="headerlink" href="#fork-the-repository" title="Link to this heading">#</a></h2>
@@ -415,6 +422,41 @@ Follow these steps to set up your own website using this template:</p>
 <li><p>In your forked repository, locate the <code class="docutils literal notranslate"><span class="pre">config.yml</span></code> file.</p></li>
 <li><p>Update the settings as needed (e.g., site title, description, author).</p></li>
 </ul>
+<section id="data-authors-yml">
+<h3>_data/authors.yml<a class="headerlink" href="#data-authors-yml" title="Link to this heading">#</a></h3>
+<p>If you visited the demo site, and especially on the about page. There is an author component, to be able to customize and edit this.</p>
+<blockquote>
+<div><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">_data</span></code> folder in your repository and locate the <code class="docutils literal notranslate"><span class="pre">authors.yml</span></code> file. On GitHub, click the file and then select the <strong>Edit</strong> button (pencil icon) to update the author details with your own information. Save your changes to apply them to your site.</p>
+</div></blockquote>
+<p><img alt="File structure and where for authors.yml" src="_images/authors.png" /></p>
+<p>Then move to the section Markdown file, the reason that this can appear, is by specify the name of the author (aka you) in each of the new markdown page you created.</p>
+</section>
+<section id="markdown-file">
+<h3>Markdown file<a class="headerlink" href="#markdown-file" title="Link to this heading">#</a></h3>
+<p>The front matter is a block of YAML metadata placed at the top of a Markdown file, enclosed by triple dashes (<code class="docutils literal notranslate"><span class="pre">---</span></code>). It defines page-specific variables such as title, layout, author, categories, tags, and more. For the Minimal Mistakes theme, a typical front matter might look like:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Getting</span><span class="nv"> </span><span class="s">Started&quot;</span>
+<span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">single</span>
+<span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vietbui</span>
+<span class="nt">categories</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">workshop</span><span class="p p-Indicator">]</span>
+<span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">setup</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">guide</span><span class="p p-Indicator">]</span>
+<span class="nn">---</span>
+</pre></div>
+</div>
+<p>This information helps Jekyll and the Minimal Mistakes theme render the page correctly and organize content across the site.</p>
+<blockquote>
+<div><p><strong>Tip:</strong> Inside the template, the main fields you may want to modify in the front matter are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">overlay_image</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">author</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">categories</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tags</span></code></p></li>
+</ul>
+<p>Adjust these values to personalize your site’s pages and appearance.</p>
+</div></blockquote>
+<p><img alt="Front Matter inside the project" src="_images/frontmatter.png" /></p>
+</section>
 </section>
 <section id="create-the-gh-pages-branch">
 <h2>3. Create the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> Branch<a class="headerlink" href="#create-the-gh-pages-branch" title="Link to this heading">#</a></h2>
@@ -423,6 +465,7 @@ Follow these steps to set up your own website using this template:</p>
 <li><p>Click <strong>Branch: main</strong> and type <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> to create a new branch.</p></li>
 <li><p>Switch to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p></li>
 </ul>
+<p><img alt="Creating new branch gh-pages" src="_images/gh-pages.gif" /></p>
 </section>
 <section id="enable-github-pages">
 <h2>4. Enable GitHub Pages<a class="headerlink" href="#enable-github-pages" title="Link to this heading">#</a></h2>
@@ -432,6 +475,13 @@ Follow these steps to set up your own website using this template:</p>
 <li><p>Click <strong>Save</strong>.</p></li>
 </ul>
 <p>Your site will be published at <code class="docutils literal notranslate"><span class="pre">https://yourusername.github.io</span></code> shortly.</p>
+</section>
+<section id="final-notes">
+<h2>5. Final Notes<a class="headerlink" href="#final-notes" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>One of the key benefits of using this template is its responsive website design. All components are optimized for viewing on different screen sizes and aspect ratios, ensuring your site looks great and functions smoothly on desktops, tablets, and mobile devices. This adaptability provides a consistent user experience and makes your content accessible to a wider audience.</p>
+</div></blockquote>
+<p><img alt="Responsive design in action" src="_images/responsive.gif" /></p>
 </section>
 </section>
 
@@ -492,9 +542,14 @@ Follow these steps to set up your own website using this template:</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo">Demo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-the-repository">1. Fork the Repository</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-configuration">2. Edit Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-configuration">2. Edit Configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-authors-yml">_data/authors.yml</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-file">Markdown file</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-gh-pages-branch">3. Create the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> Branch</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-github-pages">4. Enable GitHub Pages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-notes">5. Final Notes</a></li>
 </ul>
   </nav></div>
 
