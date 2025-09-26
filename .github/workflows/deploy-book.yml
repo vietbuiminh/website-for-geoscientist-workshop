@@ -1,5 +1,6 @@
 name: Deploy Jupyter Book to gh-pages
-
+permissions:
+  contents: write
 # Trigger the workflow on push to main branch
 on:
   push:
