@@ -33,7 +33,7 @@ jobs:
           cache: pip # Implicitly depends upon requirements.txt
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r docs/requirements.txt
 
       # Build the book
       - name: Build the book
