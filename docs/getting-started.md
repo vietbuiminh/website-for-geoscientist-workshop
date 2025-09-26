@@ -19,6 +19,13 @@ Follow these steps to set up your own website using this template:
 
 ### _data/authors.yml
 
+If you visited the demo site, and especially on the about page. There is an author component, to be able to customize and edit this.
+
+> Navigate to the `_data` folder in your repository and locate the `authors.yml` file. On GitHub, click the file and then select the **Edit** button (pencil icon) to update the author details with your own information. Save your changes to apply them to your site.
+
+![File structure and where for authors.yml](authors.png)
+
+Then move to the section Markdown file, the reason that this can appear, is by specify the name of the author (aka you) in each of the new markdown page you created. 
 
 
 ### Markdown file
