@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Making your own website as a Geoscientist &#8212; Geoscientist website tutorial</title>
+    <title>Getting Started &#8212; Geoscientist website tutorial</title>
   
   
   
@@ -57,10 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'getting-started';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Basics of a Website" href="design.html" />
+    <link rel="prev" title="Introduction to GitHub Pages" href="github-page.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +123,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -143,7 +141,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -174,16 +172,16 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Making your own website as a Geoscientist
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="design.html">Basics of a Website</a></li>
 <li class="toctree-l1"><a class="reference internal" href="github-page.html">Introduction to GitHub Pages</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting Started</a></li>
 </ul>
 
     </div>
@@ -255,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/vietbuiminh/website-for-geoscientist-workshop/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/vietbuiminh/website-for-geoscientist-workshop/issues/new?title=Issue%20on%20page%20%2Fgetting-started.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -285,7 +283,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/getting-started.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -356,7 +354,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -367,11 +367,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Making your own website as a Geoscientist</h1>
+    <h1>Getting Started</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo">Demo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-the-repository">1. Fork the Repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-configuration">2. Edit Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-gh-pages-branch">3. Create the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> Branch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-github-pages">4. Enable GitHub Pages</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -381,24 +393,46 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="making-your-own-website-as-a-geoscientist">
-<h1>Making your own website as a Geoscientist<a class="headerlink" href="#making-your-own-website-as-a-geoscientist" title="Link to this heading">#</a></h1>
-<blockquote>
-<div><p>who <em>wouldn’t</em> want to spend their precious free time building a website instead of, you know, actually doing science? Imagine the thrill of debugging HTML at midnight, or the joy of explaining to your colleagues why your homepage is still “under construction.” Join us—your future self will thank you (or at least, you’ll have a cool URL to put on your business card).</p>
-</div></blockquote>
-<p>This workshope is designed to be easily setup and maintaining the website. It will use Minimal Mistake theme and Github Page to deploy the website. The question is,</p>
-<blockquote>
-<div><p>Will you put time and effort in setting up a nice and proper website?</p>
-</div></blockquote>
-<p>In preparation for this workshop on Friday, all you need to do now</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
+<section id="demo">
+<h2>Demo<a class="headerlink" href="#demo" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://vietmbui.com/force-academic-mk/"><img alt="Demo" src="_images/template.png" /></a>
+Follow these steps to set up your own website using this template:</p>
+</section>
+<section id="fork-the-repository">
+<h2>1. Fork the Repository<a class="headerlink" href="#fork-the-repository" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Have a github account, if not please go to <a class="reference external" href="https://github.com/">GitHub</a></p></li>
-<li><p>Sit back relax and waiting for this website to update on Friday with tutotial.</p></li>
+<li><p>Go to the <a class="reference external" href="https://github.com/vietbuiminh/force-academic-mk">force-academic-mk repository page</a>.</p></li>
+<li><p>Click <strong>Fork</strong> at the top right.</p></li>
+<li><p>Name your new repository as <code class="docutils literal notranslate"><span class="pre">yourusername.github.io</span></code>.</p></li>
 </ul>
-<!-- ```{tableofcontents}
-``` -->
-<div class="toctree-wrapper compound">
-</div>
+<p><img alt="Fork repository" src="_images/fork.gif" /></p>
+</section>
+<section id="edit-configuration">
+<h2>2. Edit Configuration<a class="headerlink" href="#edit-configuration" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>In your forked repository, locate the <code class="docutils literal notranslate"><span class="pre">config.yml</span></code> file.</p></li>
+<li><p>Update the settings as needed (e.g., site title, description, author).</p></li>
+</ul>
+</section>
+<section id="create-the-gh-pages-branch">
+<h2>3. Create the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> Branch<a class="headerlink" href="#create-the-gh-pages-branch" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Go to the <strong>Code</strong> tab.</p></li>
+<li><p>Click <strong>Branch: main</strong> and type <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> to create a new branch.</p></li>
+<li><p>Switch to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p></li>
+</ul>
+</section>
+<section id="enable-github-pages">
+<h2>4. Enable GitHub Pages<a class="headerlink" href="#enable-github-pages" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Go to <strong>Settings</strong> &gt; <strong>Pages</strong>.</p></li>
+<li><p>Under <strong>Source</strong>, select the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p></li>
+<li><p>Click <strong>Save</strong>.</p></li>
+</ul>
+<p>Your site will be published at <code class="docutils literal notranslate"><span class="pre">https://yourusername.github.io</span></code> shortly.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -431,14 +465,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="design.html"
-       title="next page">
+    <a class="left-prev"
+       href="github-page.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Basics of a Website</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction to GitHub Pages</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -446,6 +480,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo">Demo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-the-repository">1. Fork the Repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-configuration">2. Edit Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-gh-pages-branch">3. Create the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> Branch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-github-pages">4. Enable GitHub Pages</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
